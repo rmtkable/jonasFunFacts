@@ -1,13 +1,43 @@
 body {
+  height: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /*parent container*/ 
+  width: 100%;
+  background-image: linear-gradient(rgba(77, 88, 243, 0.7),rgba(59, 90, 126, 0.7)),url(./chelsea\ football\ club.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-anchors {
+  float: right;
+  margin-right: 0%;
+  font-size: 20px;
+  
+}
+
+li{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.logo{
+  position: relative;
+  width: 100px;
+  
+}
+.heading-fact{
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Navbar from './component/Navbar';
+import { BrowserRouter, Router } from 'react-router-dom';
+import factOne from './component/fact-one';
+import factTwo from './component/fact-two';
+import factThree from './component/fact-three';
 
-function App() {
+
+class App extends Component{
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+     <div className="App">
+        <Navbar />
+        <Router path='/' component={factOne}/>
+        <Router path='/fact-two' component={factTwo}/>
+        <Router path='/fact-three' component={factThree}/>
+        <p className='heading-fact'> Fun Fact about Chelsea Football Club</p>
+     </div>
+    </BrowserRouter>
+  )
+  }
 }
 
 export default App;

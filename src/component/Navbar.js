@@ -8,7 +8,6 @@ const Navbar = () => {
         <nav className="nav-wrapper blue darken-3">
             <div className="container">
             <img src={chelseaLogo} alt="logo" className="logo"/> 
-        
                 <Link to="/">Fact one</Link>
                 <Link to="/fact-two">Fact two</Link>           
                 <Link to="/fact-three">Fact three</Link>
